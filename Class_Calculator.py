@@ -65,8 +65,11 @@ class Calculator:
             operation = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
 
             # Raise Exception
-            if operation not in self.operations:
-                raise ValueError
+            try:
+
+                if operation not in self.operations:
+                    except ValueError:
+                    print("\n\033[31mSorry! Invalid input, please enter one of the given choices")
             
             try:
                 # Ask user for two integers
