@@ -98,3 +98,20 @@ class Calculator:
                 print("\n\033[31mSorry! Invalid input, please enter one of the given choices")
             except ZeroDivisionError:
                 print("\n\033[31mSorry! You are dividing by zero")
+
+            # Ask if the user wants to try again or not
+            choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
+
+            # Raise Value error
+            if choice not in ["y", "n"]:
+               raise ValueError
+
+            # If yes, repeat Step 1
+            if choice == 'y':
+                continue
+
+            # If no, Display “Thank you!” and the program will exit
+            else:
+                r = Figlet(font = "cybermedium")
+                print(colored(r.renderText('\nThank you!'), 'red'))
+                break
