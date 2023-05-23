@@ -72,3 +72,8 @@ class Calculator:
                 # Ask user for two integers
                 num1 = int(input("Enter the first integer: "))
                 num2 = int(input("Enter the second integer: "))
+
+                # Perform addition and display result
+                if operation == '1':
+                    result = self.addition(num1, num2)
+                    print("\n\033[93mThe result of", num1, "+", num2, "is:", result)
