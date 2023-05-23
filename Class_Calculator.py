@@ -61,14 +61,14 @@ class Calculator:
             table.add_row(['c.) Multiplication', 3])
             table.add_row(['d.) Division', 4])
             print(table)
-
-            operation = int(input("\n\033[92mPlease enter your chosen operation (1/2/3/4): "))
-
-            # Raise Exception
-            if operation not in self.operations:
-                raise ValueError
             
             try:
+                operation = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
+
+                # Raise Exception
+                if operation not in self.operations:
+                    raise ValueError
+            
                 # Ask user for two integers
                 num1 = int(input("Enter the first integer: "))
                 num2 = int(input("Enter the second integer: "))
