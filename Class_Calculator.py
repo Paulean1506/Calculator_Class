@@ -47,3 +47,20 @@ class Calculator:
         print("         |__||__|        ")
         print("          ||  ||         ")
         print("         ooO  Ooo        ")
+
+        # Use a while loop to continuously prompt the user for an operation
+        while True:
+
+            # Ask the user to choose one of the four math operations
+            table = PrettyTable()
+            table.title = '\033[95mSelect operation:'
+            table.field_names = ['Operation', 'Choice']
+            table.align['Operation'] = 'l'
+            table.add_row(['a.) Addition', 1])
+            table.add_row(['b.) Subtraction', 2])
+            table.add_row(['c.) Multiplication', 3])
+            table.add_row(['d.) Division', 4])
+            print(table)
+
+            operation = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
+
