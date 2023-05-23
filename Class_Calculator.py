@@ -77,3 +77,8 @@ class Calculator:
                 if operation == '1':
                     result = self.addition(num1, num2)
                     print("\n\033[93mThe result of", num1, "+", num2, "is:", result)
+
+                # Perform subtraction and display result
+                elif operation == '2':
+                    result = self.subtraction(num1, num2)
+                    print("\n\033[93mThe result of", num1, "-", num2, "is:", result)
