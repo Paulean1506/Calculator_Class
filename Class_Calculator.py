@@ -34,4 +34,16 @@ class Calculator:
         print(colored(f.renderText('Oh, Hi there!'), 'cyan'))
         print('=' * 54)
 
-        
+        # Ask the name of the user
+        name=input("\nWhat's your name? ")
+        print("\n")
+        print("         \\|||||/        ")
+        print("         ( OᴗO )         ")
+        print("+--ooO------------------+")
+        print("|                       |")
+        print("|     Hello " + name + "     |")
+        print("|                       |")
+        print("+------------------Ooo--+")
+        print("         |__||__|        ")
+        print("          ||  ||         ")
+        print("         ooO  Ooo        ")
