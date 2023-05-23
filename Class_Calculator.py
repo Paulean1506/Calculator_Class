@@ -87,3 +87,8 @@ class Calculator:
                 elif operation == '3':
                     result = self.multiplication(num1, num2)
                     print("\n\033[93mThe result of", num1, "*", num2, "is:", result)
+
+                # Perform division and display result
+                elif operation == '4':
+                    result = self.division(num1, num2)
+                    print("\n\033[93mThe result of", num1, "/", num2, "is:", result)
