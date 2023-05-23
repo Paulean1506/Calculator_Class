@@ -64,3 +64,6 @@ class Calculator:
 
             operation = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
 
+            # Raise Exception
+            if operation not in self.operations:
+                raise ValueError
