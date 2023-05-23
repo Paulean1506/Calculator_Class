@@ -82,3 +82,8 @@ class Calculator:
                 elif operation == '2':
                     result = self.subtraction(num1, num2)
                     print("\n\033[93mThe result of", num1, "-", num2, "is:", result)
+
+                # Perform multiplication and display result
+                elif operation == '3':
+                    result = self.multiplication(num1, num2)
+                    print("\n\033[93mThe result of", num1, "*", num2, "is:", result)
