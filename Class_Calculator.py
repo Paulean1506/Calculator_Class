@@ -62,14 +62,11 @@ class Calculator:
             table.add_row(['d.) Division', 4])
             print(table)
 
-            operation = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
+            operation = int(input("\n\033[92mPlease enter your chosen operation (1/2/3/4): "))
 
             # Raise Exception
-            try:
-
-                if operation not in self.operations:
-                    except ValueError:
-                    print("\n\033[31mSorry! Invalid input, please enter one of the given choices")
+            if operation not in self.operations:
+                raise ValueError
             
             try:
                 # Ask user for two integers
