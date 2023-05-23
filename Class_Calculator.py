@@ -67,3 +67,8 @@ class Calculator:
             # Raise Exception
             if operation not in self.operations:
                 raise ValueError
+            
+            try:
+                # Ask user for two integers
+                num1 = int(input("Enter the first integer: "))
+                num2 = int(input("Enter the second integer: "))
