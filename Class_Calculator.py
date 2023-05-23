@@ -92,3 +92,9 @@ class Calculator:
                 elif operation == '4':
                     result = self.division(num1, num2)
                     print("\n\033[93mThe result of", num1, "/", num2, "is:", result)
+
+            # Apply the appropriate exceptions
+            except ValueError:
+                print("\n\033[31mSorry! Invalid input, please enter one of the given choices")
+            except ZeroDivisionError:
+                print("\n\033[31mSorry! You are dividing by zero")
